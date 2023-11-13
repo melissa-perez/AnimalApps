@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AnimalApps</string>
+    <string name="terms">By continuing you accept our <u><b>Terms of Use</b></u> and <u><b>Privacy Policy</b></u>.</string>
+    <string name="login">Have an account? <font color="#007BF7">Log in</font></string>
 </resources>
