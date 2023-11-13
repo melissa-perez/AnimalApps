@@ -8,13 +8,26 @@
 
 
     <TextView
+        android:id="@+id/planTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:text="What's your goal?"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/greetingTv" />
+
+    <TextView
         android:id="@+id/greetingTv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="8dp"
-        android:text="Hey! Let's make you a workout plan."
+        android:text="Hey! Let's make you a purrfect plan."
+        android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +67,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="#017AFE"
+        android:backgroundTint="#8CAB5A"
         android:paddingTop="20dp"
         android:paddingBottom="20dp"
         android:text="Continue"
@@ -70,11 +83,116 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/frame"
-        android:tooltipText="Send an email"
         app:layout_constraintEnd_toStartOf="@+id/greetingTv"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cat" />
+        app:srcCompat="@drawable/trainer"
+        android:tooltipText="Hi, I'm Cat Advisor🐈."
+        />
+
+    <LinearLayout
+        android:id="@+id/financeLl"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/card"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:tooltipText="Your cat will love you."
+        app:layout_constraintEnd_toStartOf="@+id/planLl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planTv">
+
+        <ImageView
+            android:id="@+id/financeIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/plan"
+            app:srcCompat="@drawable/finances" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Save money for more treats"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/planLl"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        android:tooltipText="Everyday is Caturday."
+        android:padding="5dp"
+
+        app:layout_constraintEnd_toStartOf="@+id/readLl"
+        app:layout_constraintStart_toEndOf="@+id/financeLl"
+        app:layout_constraintTop_toBottomOf="@+id/planTv">
+
+        <ImageView
+            android:id="@+id/planIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/plan"
+            app:srcCompat="@drawable/tasks" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Plan ahead for Caturday"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/readLl"
+        android:layout_width="120dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/card"
+        android:orientation="vertical"
+        android:tooltipText="Your cat will have a free nap spot as you read... you."
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/planLl"
+        app:layout_constraintTop_toBottomOf="@+id/planTv">
+
+        <ImageView
+            android:id="@+id/readIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/plan"
+            app:srcCompat="@drawable/read" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:text="List books for cat"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
