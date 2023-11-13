@@ -34,15 +34,15 @@ The following EXTRA features are implemented:
 
 ## Chosen Screenshot
 
-I have chosen to duplicate the following layout from the **App Name Here** app:
+I have chosen to duplicate the following layout from the **Seven** app:
 
-<img src='[http://example.com/link/to/your/image.png](https://designvault.io/shot/1585-0801231143/)' title='Chosen Screenshot' width='600' alt='Chosen Screenshot' />
+<img src='seven.png' title='Chosen Screenshot' width='600' alt='Chosen Screenshot' />
 
 ## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<img src='animalapps.gif' title='Video Demo' width='600' alt='Video Demo' />
 
 GIF created with **LICEcap**
 
@@ -59,7 +59,7 @@ It is for an app that **brief description**.
 ## Notes
 
 Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
-- Learnt about drawables, again
+- Learnt about drawables
 - Using layouts within layouts
 
 ## License
