@@ -61,6 +61,7 @@ It is for an app that **brief description**.
 Here's a place for any other notes on the app, it's creation process, or what you learned this unit!
 - Learnt about drawables
 - Using layouts within layouts
+- Using tooltips requires sdk 26
 
 ## License
 
